@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT3</title>
+</head>
+<body>
+<script>
+    // let thuong="abcdefghijklmnopqrstuvwxyz";
+    // let hoa="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let nhap =prompt("Nhập vào đây chuỗi ký tự bao gồm chữ hoa và chữ thường:");
+    let arrnhap=nhap.split('');
+    let arrayout=[];
+    let i=0;
+    let j=0;
+    let a="";
+    for(let i=0;i<arrnhap.length;i++){
+        if(arrnhap[i]==arrnhap[i].toLowerCase()){
+            arrnhap[i]=arrnhap[i].toUpperCase();
+        }else if(arrnhap[i]==arrnhap[i].toUpperCase()){
+            arrnhap[i]=arrnhap[i].toLowerCase();
+        }
+    }
+    console.log(arrnhap.join(''));
+
+</script>
+</body>
+</html>
